@@ -1,17 +1,5 @@
 (function(document) {
 
-    function getCanonical() {
-        var linkElem = document.querySelector('link[rel="canonical"]');
-        return linkElem && linkElem.href;
-    }
-
-    function redirectToCanonical() {
-        var canonical = getCanonical();
-        if (canonical && (window.location.toString() !== canonical)) {
-            window.location = canonical;
-        }
-    }
-
     var mobileSelectors = [
         'm', 'mobile'
     ];
@@ -37,7 +25,6 @@
     //try both methods of redirecting
     var mobilePart = getMobileUrl();
     if (mobilePart) {
-        redirectToCanonical();
         redirectToNonMobile(mobilePart);
     }
 
