@@ -8,8 +8,8 @@
         var host = window.location.hostname;
 
         for (var i = 0; i < mobileSelectors.length; i++) {
-            if ((host.indexOf(mobileSelectors[i] + '.') >= 0)
-                || ('.' + host.indexOf(mobileSelectors[i] + '.') >= 0)) {
+            if (host.startsWith(mobileSelectors[i] + '.')
+                || (host.indexOf('.' + mobileSelectors[i] + '.') >= 0)) {
                 return mobileSelectors[i] + '.';
             }
         }
