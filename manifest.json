@@ -1,7 +1,7 @@
 {
   "name": "Unmobilizer",
   "manifest_version": 2,
-  "version": "5",
+  "version": "6",
   "permissions": [
     "activeTab"
   ],

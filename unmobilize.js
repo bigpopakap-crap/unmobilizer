@@ -1,7 +1,7 @@
 (function(document) {
 
     var mobileSelectors = [
-        'm', 'mobile'
+        'm', 'en.m', 'mobile'
     ];
 
     function getMobileUrl() {
